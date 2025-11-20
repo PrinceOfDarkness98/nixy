@@ -5,15 +5,15 @@
 }: let
   inherit (import ../../hosts/${host}/variables.nix) stylixEnable;
 in
-lib.mkIf stylixEnable {
-  stylix.targets = {
-    waybar.enable = false;
-    rofi.enable = false;
-    hyprland.enable = false;
-    hyprlock.enable = false;
-    ghostty.enable = false;
-    qt.enable = true;
-  };
+  lib.mkIf stylixEnable {
+    stylix.targets = {
+      waybar.enable = true;
+      rofi.enable = true;
+      hyprland.enable = true;
+      hyprlock.enable = true;
+      ghostty.enable = true;
+      qt.enable = true;
+    };
 
-  services.nwg-drawer-stylix.enable = true;
-}
+    services.nwg-drawer-stylix.enable = true;
+  }
