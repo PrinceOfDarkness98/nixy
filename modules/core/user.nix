@@ -9,7 +9,7 @@
 let
   variables = import ../../hosts/${host}/variables.nix;
   inherit (variables) gitUsername;
-  defaultShell = variables.defaultShell or "zsh";
+  defaultShell = variables.defaultShell or "fish";
   shellPackage = if defaultShell == "fish" then pkgs.fish else pkgs.zsh;
 in
 {
