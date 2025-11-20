@@ -49,7 +49,7 @@
   # NOTE: If you change barChoice to "dms", you must run 'dms-install' after rebuilding
 
   # Shell Choice
-  defaultShell = "zsh"; # Options: "fish" or "zsh"
+  defaultShell = "fish"; # Options: "fish" or "zsh"
 
   # Theming
   stylixImage = ../../wallpapers/45.png;
