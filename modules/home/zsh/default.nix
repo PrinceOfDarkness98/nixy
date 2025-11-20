@@ -93,7 +93,7 @@ in {
       man = "batman";
       hosts = "dcli list-hosts";
       switch = "dcli switch-host";
-      nixy = "cd ~/nixy/";
+      ncon = "cd ~/black-don-os/";
     };
   };
 }
