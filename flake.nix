@@ -65,6 +65,12 @@
           username = "user";
         };
 
+        nixy = mkHost {
+          hostname = "nixy";
+          profile = "nvidia";
+          username = "jacob";
+        };
+
         nix-tester = mkHost {
           hostname = "nix-tester";
           profile = "intel";
