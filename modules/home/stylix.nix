@@ -13,6 +13,7 @@ in
       hyprlock.enable = true;
       ghostty.enable = true;
       qt.enable = true;
+      kitty.enable = true;
     };
 
     services.nwg-drawer-stylix.enable = true;
