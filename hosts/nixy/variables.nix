@@ -33,13 +33,13 @@
 
   # Optional Features (disabled for faster initial install)
   # You can enable these later by setting to true and rebuilding
-  gamingSupportEnable = false; # Gaming controllers, gamescope, protonup-qt
+  gamingSupportEnable = true; # Gaming controllers, gamescope, protonup-qt
   flutterdevEnable = false; # Flutter development environment
   syncthingEnable = false; # Syncthing file synchronization
   enableCommunicationApps = false; # Discord, Teams, Zoom, Telegram
   enableExtraBrowsers = false; # Vivaldi, Brave, Firefox, Chromium, Helium
   enableProductivityApps = false; # Obsidian, GNOME Boxes, QuickEmu
-  aiCodeEditorsEnable = false; # Claude-code, gemini-cli, cursor
+  aiCodeEditorsEnable = true; # Claude-code, gemini-cli, cursor
 
   # Desktop Environment
   enableHyprlock = false; # Set to false if using DMS/Noctalia lock screens
@@ -57,5 +57,5 @@
   animChoice = ../../modules/home/hyprland/animations-end4.nix;
 
   # Startup Applications
-  startupApps = [];
+  startupApps = [ ];
 }
