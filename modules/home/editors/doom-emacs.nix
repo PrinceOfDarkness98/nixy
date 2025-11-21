@@ -1,6 +1,6 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
-    emacs-gtk
+    emacs
     git
     lazygit
     ripgrep
@@ -61,7 +61,6 @@
      :checkers
      (syntax +flymake)
      (spell +flyspell)
-     grammar
 
      :tools
      (eval +overlay)
@@ -90,7 +89,7 @@
   home.file.".doom.d/config.el".text = ''
     ;;; config.el -*- lexical-binding: t; -*-
 
-    (setq doom-theme 'doom-one)
+    (setq doom-theme 'doom-gruvbox)
     (setq display-line-numbers-type 'relative)
     (setq nerd-icons-font-family "JetBrainsMono Nerd Font")
 
