@@ -42,7 +42,7 @@
     opener = {
       edit = [
         {
-          run = "zeditor";
+          run = "emacs";
           desc = "$EDITOR";
           block = true;
           for = "unix";
