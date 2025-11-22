@@ -1,6 +1,6 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
-    emacs
+    # emacs
     git
     lazygit
     ripgrep
@@ -15,6 +15,10 @@
     # LSP servers
     clang-tools # C/C++ LSP
     nil # Nix LSP
+
+    ((emacsPackagesFor emacs).emacsWithPackages (
+      epkgs: [epkgs.vterm]
+    ))
   ];
 
   home.file.".doom.d/init.el".text = ''
