@@ -63,6 +63,7 @@ in {
       ./xdg.nix
       ./yazi
       ./zoxide.nix
+      ./zellij.nix
       ./environment.nix
     ]
     # Window Managers - Both always available, user selects at login
